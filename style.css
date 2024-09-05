@@ -1,3 +1,4 @@
+
 h1{
     font-family: "Raleway", sans-serif;
     font-weight: 700;
@@ -12,24 +13,33 @@ h4,h5{
     font-family: "Open Sans", sans-serif;
     font-weight: 400;
 }
+
 body{
     margin: 0px;
     padding: 0px;
 }
 
-.logo{
+.one{
     display: flex;
     justify-content: space-between;
-    align-items: center;
-    padding: 30px;
 }
 
-.navbar{
-    list-style: none;  
+.nav{
     display: flex;
     gap: 70px;
-    margin-right:40px;
+    padding: 40px;
+    margin-right:50px;
 }
+
+.nav a{
+    text-decoration: none;
+    color: black;
+}
+
+.logo img{
+    padding: 40px;
+}
+
 
 .main{
     display: flex;  
@@ -48,6 +58,7 @@ body{
 .user-email{
     padding-top: 10px;
 }
+
 .user-email input{
     width: 45%;
     padding: 12px;
@@ -192,6 +203,7 @@ li{
     display: flex;
     gap: 60px;
     margin-top: 20px;
+    
 }
 
 .contact li{
@@ -204,4 +216,84 @@ ul{
 
 .contact img{
     margin-right: 20px;
+}
+
+@media (max-width:767px){
+
+    .logo{
+        width: 100%;
+    }
+
+    .nav{  
+        gap:30px;
+        margin-left: 20px;
+        font-size: 14px;
+    }
+
+    .one{
+        width: 100%;
+    }
+
+    .main{
+        flex-direction: column-reverse;
+    }
+
+    .content{
+        text-align: center;   
+    }
+
+    .image1 img{  
+        width: 80%;
+    }
+
+    .main2{
+        flex-direction: column-reverse;
+    }
+
+    .content2{
+        text-align: center;
+        width: 90%;
+    }
+
+    .card{
+        width: 80%;
+    }
+
+    .main3{
+        flex-direction: column;
+    }
+
+    .content3{
+        text-align: center;
+        width: 80%;
+    }
+
+    .footer .contact{
+        flex-direction: column;
+    }
+
+    .user-email input{
+        width: 89%;   
+        margin-left: 18px;
+    }
+
+    .user-email button{
+        width: 100%;
+    }
+
+    .email2 input{
+        width: 91%;
+    }
+
+    .email2 button{
+        width: 100%;
+    }
+
+    .contact{
+        width: 100%;
+    }
+
+    .social{
+        justify-content: center;
+    }
 }
