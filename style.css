@@ -17,6 +17,7 @@ h4,h5{
 body{
     margin: 0px;
     padding: 0px;
+    min-width: 375px;
 }
 
 .one{
